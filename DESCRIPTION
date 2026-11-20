@@ -1,0 +1,14 @@
+Package: lidarflow
+Title: LiDAR processing tools
+Version: 0.1.0
+Authors@R: 
+   person("Tillman", "Reuter", email = "tillmanreuter@tuta.io", role = c("aut", "cre"))
+Description: A Processing function for LiDAR point clouds.
+License: `use_gpl3_license()`
+Imports: 
+    lasR,
+    lidR,
+    sf
+Config/roxygen2/version: 8.1.1
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
