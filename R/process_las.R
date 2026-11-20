@@ -105,14 +105,12 @@ for (pkg in required_packages) {
 #'
 #' @examples
 #' \dontrun{
-#'   # Basic processing with normalization and noise removal
 #'   process_las(
 #'     input_file = "data/scan.laz",
 #'     normalize  = TRUE,
 #'     denoise    = TRUE
 #'   )
 #'
-#'   # Clip to circle and subsample
 #'   process_las(
 #'     input_file = "data/scan.las",
 #'     clip_to    = "circle",
