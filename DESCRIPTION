@@ -13,3 +13,4 @@ Additional_repositories: https://r-lidar.r-universe.dev
 Config/roxygen2/version: 8.1.1
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
+BuildManual: no
