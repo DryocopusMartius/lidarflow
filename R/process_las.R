@@ -104,24 +104,6 @@ for (pkg in required_packages) {
 #'         Output files are written to disk as side effects.
 #'
 #' @examples
-#' \dontrun{
-#'   process_las(
-#'     input_file = "data/scan.laz",
-#'     normalize  = TRUE,
-#'     denoise    = TRUE
-#'   )
-#'
-#'   process_las(
-#'     input_file = "data/scan.las",
-#'     clip_to    = "circle",
-#'     x_center   = 500000,
-#'     y_center   = 6000000,
-#'     radius     = 50,
-#'     subsample  = TRUE,
-#'     distance   = 0.5
-#'   )
-#' }
-#'
 #' @export
 process_las <- function(input_file,
                         output_dir         = NULL,
