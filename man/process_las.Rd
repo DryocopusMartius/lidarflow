@@ -112,25 +112,3 @@ normalization, and derivative product generation (DTM, height slices).
 It utilizes the \code{lasR} package for the main pipeline and \code{lidR}
 for specific pre-processing tasks like trajectory-based clipping.
 }
-\examples{
-\dontrun{
-  # Basic processing with normalization and noise removal
-  process_las(
-    input_file = "data/scan.laz",
-    normalize  = TRUE,
-    denoise    = TRUE
-  )
-
-  # Clip to circle and subsample
-  process_las(
-    input_file = "data/scan.las",
-    clip_to    = "circle",
-    x_center   = 500000,
-    y_center   = 6000000,
-    radius     = 50,
-    subsample  = TRUE,
-    distance   = 0.5
-  )
-}
-
-}

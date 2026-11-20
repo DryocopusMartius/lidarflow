@@ -103,7 +103,6 @@ for (pkg in required_packages) {
 #' @return Invisibly returns the result of the \code{lasR::exec} call.
 #'         Output files are written to disk as side effects.
 #'
-#' @examples
 #' @export
 process_las <- function(input_file,
                         output_dir         = NULL,
