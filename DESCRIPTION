@@ -5,7 +5,7 @@ Authors@R:
    person("Tillman", "Reuter", email = "tillmanreuter@tuta.io", role = c("aut", "cre"))
 Description: A Processing function for LiDAR point clouds.
 License: `use_gpl3_license()`
-Suggests: 
+Suggests:
     lasR,
     lidR,
     sf
