@@ -2,7 +2,7 @@
 #      name:  minimal_processing_lasR                                          #
 # timestamp:  2026-10-06T12:46Z                                                #
 #    author:  Tillman Reuter (orcid.org/0009-0002-1156-9983)                   #
-#   license:  CC BY (creativecommons.org/licenses/by/4.0/)                     #
+#   license:  GPLv3 (see LICENSE.md)                                           #
 ###%###%###%###%###%###%###%###%###%###%###%###%###%###%###%###%###%###%###%###%
 
 # READ ME ######################################################################

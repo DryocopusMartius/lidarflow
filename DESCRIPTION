@@ -1,10 +1,10 @@
 Package: lidarflow
 Title: LiDAR processing tools
-Version: 0.1.0
+Version: 0.2.0
 Authors@R: 
    person("Tillman", "Reuter", email = "tillmanreuter@tuta.io", role = c("aut", "cre"))
-Description: A Processing function for LiDAR point clouds.
-License: `use_gpl3_license()`
+Description: At core lives a LiDAR processing functions and around a few helpers for datahandling and analysis
+License: GPL (>= 3)
 Suggests:
     lasR,
     lidR,
