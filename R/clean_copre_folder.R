@@ -22,15 +22,12 @@
  USAGE:
    Source this file in your R session, then call `clean_copre_folder()`.
 '
-par(mfrow=c(1,1))
-Sys.setenv(LANG = "en")
-#Sys.setenv(LANG = "ger")
 
 ###%###%###%###%###%###%###%###%###%###%###%###%###%###%###%###%###%###%###%###%
 # LOAD AND INSTALL PACKAGES ####################################################
 ###%###%###%###%###%###%###%###%###%###%###%###%###%###%###%###%###%###%###%###%
 
-
+# no dependencies
 
 ###%###%###%###%###%###%###%###%###%###%###%###%###%###%###%###%###%###%###%###%
 # FUNCTIONS ####################################################################
@@ -139,7 +136,7 @@ clean_copre_scan <- function(folder, retain=NULL) {
 #' @export
 #' @examples
 #' \dontrun{
-#' clean_copre_folder("C:/MLS/costa_rica/CHC_20261021111716/2026-11-23-123456(SN-005C)")
+#' clean_copre_folder("C:/MLS/costa_rica/CHC_20261021111716")
 #' }
 clean_copre_folder <- function(parent_dir, retain=NULL){
 

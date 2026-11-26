@@ -220,6 +220,7 @@ process_las <- function(input_file,
     # 1. Read trajectory and create spatial hull
     traj <- read.table(traj_path, sep = ",", header = FALSE)
     traj_xy <- traj[, 2:3]
+    traj_xy <- -traj_xy
     names(traj_xy) <- c("X", "Y")
 
     # Convert to SF object and compute convex hull
@@ -239,10 +240,10 @@ process_las <- function(input_file,
 
     # 3. Write clipped cloud to a temporary file for lasR processing
     working_file <- tempfile(fileext = ".las")
-    lidR::writeLAS(las_clipped, working_file)+
+    lidR::writeLAS(las_clipped, working_file)
 
-      # Clean memory
-      rm(las_full, las_clipped, pts_sf, hull)
+    # Clean memory
+    rm(las_full, las_clipped, pts_sf, hull)
     gc()
 
     if (verbose) message("Clipped cloud written to temporary file: ", working_file)
@@ -300,10 +301,10 @@ process_las <- function(input_file,
     stages$noise_for_ptd <-   lasR::classify_with_sor(k=20,m=0, class = 18L)
 
     # Progressive TIN Densification
-    stages$classify_ground <- lasR::classify_with_ptd(res=start_res, angle = angle, filter = drop_class(18L))
+    stages$classify_ground <- lasR::classify_with_ptd(res=start_res, angle = angle, filter = lasR::drop_class(18L))
 
     # Triangulate ground points
-    stages$tri <- tri <-      lasR::triangulate(filter = keep_ground())
+    stages$tri <- tri <-      lasR::triangulate(filter = lasR::keep_ground())
 
     # Optional: Generate DTM Raster
     if (output_dtm){
